@@ -1,0 +1,16 @@
+{
+  "expo": {
+    "name": "art.biz-flow-cloud",
+    "slug": "art-biz-flow-cloud",
+    "version": "1.0.0",
+    "platforms": ["ios", "android", "web"],
+    "sdkVersion": "49.0.0",
+    "assetBundlePatterns": ["**/*"],
+    "extra": {
+      "supabaseUrl": "${SUPABASE_URL}",
+      "supabaseAnonKey": "${SUPABASE_ANON_KEY}",
+      "googleProjectId": "${GOOGLE_PROJECT_ID}",
+      "googleLocation": "${GOOGLE_LOCATION}"
+    }
+  }
+}
