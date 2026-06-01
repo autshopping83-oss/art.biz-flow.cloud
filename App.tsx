@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { SafeAreaView, StyleSheet, View } from 'react-native';
+import { Analytics } from '@vercel/analytics/react';
 import { useAuth } from '@hooks/useAuth';
 import { AuthScreen } from '@screens/AuthScreen';
 import { CreateScreen } from '@screens/CreateScreen';
@@ -33,6 +34,7 @@ export default function App() {
           />
         )}
         {screen === 'create' && user ? <CreateScreen userId={user.id} /> : null}
+        <Analytics />
       </View>
     </SafeAreaView>
   );
